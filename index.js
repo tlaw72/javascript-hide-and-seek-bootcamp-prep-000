@@ -9,21 +9,17 @@ function nestedTarget() {
 }
 
 function increaseRankBy(n) {
-  
-  let newRank = [];
-  let finalRank = [];
-  let holder;
-  let rankLists = document.querySelectorAll('.ranked-list li');
+  let rankLists = document.querySelectorAll('.ranked-list');
   for (let i = 0; i < rankLists.length; i++) {
-    newRank.push(rankLists[i].children);
-    for (let j = 0; j < rankLists[i]; j++) {
-      finalRank.push(newRank[j]);
+    let holder = rankLists[i].children;
+    for (let j = 0; j < holder.length; j++){       
+      let newHolder = holder[j];
+      newHolder = parseInt(newHolder.innerHTML);
+      holder[j].innerHTML = newHolder + n;
     }
-    
   }
-  return finalRank;
 }
-increaseRankBy(2);
+
 
 
 function deepestChild() {
