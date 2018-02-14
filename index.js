@@ -17,12 +17,12 @@ function increaseRankBy(n) {
     for (let j = 0; j < holder.length; j++){       
       let newHolder = holder[j];
       newHolder = parseInt(newHolder.innerHTML);
-      newRank.push(newHolder + n);
+      holder[j].innerHTML = newHolder + n;
       
     }
    
   }
-  console.log(newRank);
+
 }
 
 
