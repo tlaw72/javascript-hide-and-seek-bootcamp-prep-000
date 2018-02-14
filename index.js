@@ -22,7 +22,7 @@ function increaseRankBy(n) {
     }
    
   }
-  return newRank;
+  console.log(newRank);
 }
 
 
