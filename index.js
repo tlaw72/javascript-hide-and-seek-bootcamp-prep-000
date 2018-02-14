@@ -16,11 +16,8 @@ function increaseRankBy(n) {
       let newHolder = holder[j];
       newHolder = parseInt(newHolder.innerHTML);
       holder[j].innerHTML = newHolder + n;
-      
     }
-   
   }
-
 }
 
 
