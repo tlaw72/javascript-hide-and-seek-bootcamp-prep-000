@@ -24,7 +24,7 @@ function increaseRankBy(n) {
   }
   return newRank;
 }
-increaseRankBy(2);
+
 
 
 function deepestChild() {
